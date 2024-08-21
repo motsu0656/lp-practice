@@ -1,1 +1,268 @@
 @charset "utf-8";
+
+body {
+  background-color: #fff;
+}
+
+/*=======================================
+nav
+=======================================*/
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  color: #777;
+  margin: 15px 0;
+  margin-left: 200px;
+}
+
+.btn {
+  padding: 0 15px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  background: #6ba7eb;
+  font-size: 12px;
+  padding: 12px 14px;
+  margin: 15px 0;
+  margin-right: 200px;
+}
+
+
+
+.btn--1:hover{
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+/*=======================================
+キービジュアル
+========================================*/
+.keyvisual {
+  position: relative;
+}
+
+.keyvisual img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.title {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  transform: translate(-50%, -50%);
+}
+
+.keyvisual h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #6ba7eb;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.keyvisual h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+/*=======================================
+work
+========================================*/
+.work {
+  display: flex;
+  justify-content: center;
+  background-color: #e3f2fd;
+  padding-top: 50px;
+}
+
+.work img {
+  width: 250px;
+}
+
+.text_box {
+  margin-left: 200px;
+}
+
+.work h2 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.work p {
+  width: 650px;
+  font-size: 15px;
+  line-height: 18px;
+  word-break: break-all;
+  text-align: center;
+}
+
+/*=======================================
+skills
+========================================*/
+
+.skills h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: center;
+}
+
+.skills ul img {
+  width: 300px;
+  height: 300px;
+  margin-left: 100px;
+}
+
+.skills .box_1 {
+  margin-bottom: 100px;
+}
+
+.skills .box_2 {
+  margin-bottom: 70px;
+}
+
+.skills .box_1 li:first-child {
+  margin-left: -100px;
+}
+
+.skills .box_2 li:first-child {
+  margin-left: -100px;
+}
+
+/*=======================================
+plan
+========================================*/
+.plan{
+  background-color: #d0dfea;
+  padding: 0 200px 50px 200px;
+}
+
+.plan h2{
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.cell--table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cell--table th {
+  background-color: #6ba7eb;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px 10px;
+}
+
+.cell--table th, .cell--table td {
+  border-left: 2px solid #fff;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 10px 10px;
+}
+
+.cell--table td {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.cell--table tr{
+  background: #f9f9f9;
+}
+
+.cell--table tr:nth-child(even){
+  background: #e0efff;
+}
+
+.cell--table tbody .left_th1{
+  background-color:#f9f9f9;
+}
+
+.cell--table tbody .left_th2{
+  background: #e0efff;
+}
+
+
+/*=======================================
+plan
+========================================*/
+.sns{
+  background-color: #e3f2fd;
+}
+
+.sns .icon_box{
+  padding: 200px 0;
+}
+
+.icon_box{
+  margin: 0 auto;
+}
+
+.sns .icon_box img{
+  padding: 25px 0;
+  width: 185px;
+  height: 185px;
+  object-fit: cover;
+  color: #8c8c8c;
+}
+
+
+
+.fa-brands{
+  width: 185px;
+  color: #8c8c8c;
+  font-size: 40px;
+  overflow: hidden;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.fa-solid{
+  width: 185px;
+  color: #8c8c8c;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+/*=======================================
+footer
+========================================*/
+footer{
+  height: 55px;
+  background-color: #cfd8dc;
+  position: relative;
+}
+
+footer small{
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
