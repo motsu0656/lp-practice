@@ -10,6 +10,7 @@ nav
 nav {
   display: flex;
   justify-content: space-between;
+  padding: 0 200px;
 }
 
 .logo {
@@ -17,7 +18,6 @@ nav {
   height: 60px;
   color: #777;
   margin: 15px 0;
-  margin-left: 200px;
 }
 
 .btn {
@@ -31,12 +31,11 @@ nav {
   font-size: 12px;
   padding: 12px 14px;
   margin: 15px 0;
-  margin-right: 200px;
 }
 
 
 
-.btn--1:hover{
+.btn--1:hover {
   background-color: #333;
   transition: background-color 0.3s;
 }
@@ -134,16 +133,25 @@ skills
   margin-left: 100px;
 }
 
+.skills .d--grid--rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  grid-template-rows: 300px 300px;
+  margin-top: 20px;
+  margin-bottom: 780px;
+}
+
+.skills .box_1 .up {
+  margin-bottom: 100px;
+}
+
 .skills .box_1 {
   margin-bottom: 100px;
 }
 
-.skills .box_2 {
-  margin-bottom: 70px;
-}
-
 .skills .box_1 li:first-child {
-  margin-left: -100px;
+  margin-left: 0;
 }
 
 .skills .box_2 li:first-child {
@@ -153,12 +161,12 @@ skills
 /*=======================================
 plan
 ========================================*/
-.plan{
+.plan {
   background-color: #d0dfea;
   padding: 0 200px 50px 200px;
 }
 
-.plan h2{
+.plan h2 {
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -179,7 +187,8 @@ plan
   padding: 10px 10px;
 }
 
-.cell--table th, .cell--table td {
+.cell--table th,
+.cell--table td {
   border-left: 2px solid #fff;
   font-size: 16px;
   line-height: 26px;
@@ -192,19 +201,19 @@ plan
   line-height: 26px;
 }
 
-.cell--table tr{
+.cell--table tr {
   background: #f9f9f9;
 }
 
-.cell--table tr:nth-child(even){
+.cell--table tr:nth-child(even) {
   background: #e0efff;
 }
 
-.cell--table tbody .left_th1{
-  background-color:#f9f9f9;
+.cell--table tbody .left_th1 {
+  background-color: #f9f9f9;
 }
 
-.cell--table tbody .left_th2{
+.cell--table tbody .left_th2 {
   background: #e0efff;
 }
 
@@ -212,54 +221,65 @@ plan
 /*=======================================
 plan
 ========================================*/
-.sns{
+.sns {
+  width: 100%;
   background-color: #e3f2fd;
+  padding: 0;
 }
 
-.sns .icon_box{
+.sns .icon_box {
+  display: flex;
+  justify-content: center;
   padding: 200px 0;
-}
-
-.icon_box{
   margin: 0 auto;
 }
 
-.sns .icon_box img{
+.sns .icon_box  li{
+  margin-left: 200px;
+}
+
+.sns .icon_box li:first-child{
+  margin-left: 0;
+}
+
+.sns .icon_box li a{
   padding: 25px 0;
-  width: 185px;
-  height: 185px;
+}
+
+
+.sns .icon_box i {
   object-fit: cover;
   color: #8c8c8c;
 }
 
 
 
-.fa-brands{
-  width: 185px;
+.fa-brands {
   color: #8c8c8c;
   font-size: 40px;
   overflow: hidden;
   align-items: center;
-  margin: 0 auto;
 }
 
-.fa-solid{
+.fa-solid {
   width: 185px;
   color: #8c8c8c;
   font-size: 40px;
   overflow: hidden;
+    align-items: center;
 }
+
 
 /*=======================================
 footer
 ========================================*/
-footer{
+footer {
   height: 55px;
   background-color: #cfd8dc;
   position: relative;
 }
 
-footer small{
+footer small {
   font-size: 10px;
   letter-spacing: 0.5px;
   position: absolute;
