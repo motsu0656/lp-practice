@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /*=======================================
 共通設定
 =======================================*/
@@ -6,20 +7,21 @@ body {
   background-color: #fff;
 }
 
-.inner{
-  padding: 0 9%;
+.inner {
+  max-width:1900px;
+  margin: 0 auto;
 }
 
 /*=======================================
 nav
 =======================================*/
-header{
+header {
   padding: 15px 0;
 }
+
 nav {
   display: flex;
-  justify-content: space-between;
-  padding: 0 200px;
+  justify-content: space-around;
 }
 
 .logo {
@@ -49,19 +51,16 @@ nav {
 /*=======================================
 キービジュアル
 ========================================*/
-.keyvisual{
+.keyvisual {
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-repeat: no-repeat;
   width: 100%;
-
   object-fit: cover;
   padding: 400px 0;
 }
 
 .title {
   width: 100%;
-  left: 50%;
-  top: 400px;
 }
 
 .keyvisual h1 {
@@ -84,7 +83,7 @@ work
 ========================================*/
 .work {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #e3f2fd;
   padding-top: 50px;
 }
@@ -116,6 +115,9 @@ work
 /*=======================================
 skills
 ========================================*/
+.skills{
+  margin-bottom: 70px;
+}
 
 .skills h2 {
   margin-top: 50px;
@@ -133,7 +135,7 @@ skills
 .skills ul img {
   width: 300px;
   height: 300px;
-  margin-left: 100px;
+  padding-left: 100px;
 }
 
 .skills .d--grid--rows {
@@ -141,25 +143,8 @@ skills
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
   grid-template-rows: 300px 300px;
-  margin-top: 20px;
-  margin-bottom: 780px;
 }
 
-.skills .box_1 .up {
-  margin-bottom: 100px;
-}
-
-.skills .box_1 {
-  margin-bottom: 100px;
-}
-
-.skills .box_1 li:first-child {
-  margin-left: 0;
-}
-
-.skills .box_2 li:first-child {
-  margin-left: -100px;
-}
 
 /*=======================================
 plan
@@ -222,7 +207,7 @@ plan
 
 
 /*=======================================
-plan
+SNS
 ========================================*/
 .sns {
   width: 100%;
@@ -237,15 +222,15 @@ plan
   margin: 0 auto;
 }
 
-.sns .icon_box  li{
+.sns .icon_box li {
   margin-left: 200px;
 }
 
-.sns .icon_box li:first-child{
+.sns .icon_box li:first-child {
   margin-left: 0;
 }
 
-.sns .icon_box li a{
+.sns .icon_box li a {
   padding: 25px 0;
 }
 
@@ -265,11 +250,10 @@ plan
 }
 
 .fa-solid {
-  width: 185px;
   color: #8c8c8c;
   font-size: 40px;
   overflow: hidden;
-    align-items: center;
+  align-items: center;
 }
 
 
