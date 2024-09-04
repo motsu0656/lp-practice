@@ -57,6 +57,8 @@ nav {
   width: 100%;
   object-fit: cover;
   padding: 400px 0;
+  background-size: cover;
+  background-position: center center;
 }
 
 .title {
@@ -89,10 +91,12 @@ work
 .work_box{
   display: flex;
   justify-content: space-around;
-
 }
 
 .pc_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 4;
 }
 
@@ -119,6 +123,7 @@ work
   line-height: 18px;
   word-break: break-word;
   color: #555;
+  text-align: center;
 }
 
 /*=======================================
@@ -142,6 +147,12 @@ skills
 .skills ul img {
   width: 300px;
   height: 300px;
+  opacity: 0.7;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.skills ul img:hover {
+  opacity: 1;
 }
 
 .skills .d--grid--rows {
@@ -157,12 +168,10 @@ plan
 ========================================*/
 .plan {
   background-color: #d0dfea;
-  padding: 0 200px 50px 200px;
+  padding: 50px 0 50px 0;
 }
 
 .plan h2 {
-  margin-top: 50px;
-  padding-top: 50px;
   padding-bottom: 50px;
   font-size: 40px;
   letter-spacing: 10px;
