@@ -12,6 +12,10 @@ body {
   margin: 0 auto;
 }
 
+main{
+  margin-top: 74px;
+}
+
 /*=======================================
 nav
 =======================================*/
@@ -23,6 +27,8 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
+  background-color: #fff;
+  opacity: 0.7;
 }
 
 nav {
@@ -58,7 +64,6 @@ nav {
 キービジュアル
 ========================================*/
 .keyvisual {
-  margin-top: 74px;
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-repeat: no-repeat;
   width: 100%;
@@ -271,7 +276,7 @@ SNS
   font-size: 40px;
   overflow: hidden;
   align-items: center;
-  overflow: hidden;
+  width: 185px;
 }
 
 .fa-solid {
@@ -279,7 +284,7 @@ SNS
   font-size: 40px;
   overflow: hidden;
   align-items: center;
-  overflow: hidden;
+  width: 185px;
 }
 
 
