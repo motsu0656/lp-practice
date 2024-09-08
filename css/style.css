@@ -271,6 +271,7 @@ SNS
   font-size: 40px;
   overflow: hidden;
   align-items: center;
+  overflow: hidden;
 }
 
 .fa-solid {
