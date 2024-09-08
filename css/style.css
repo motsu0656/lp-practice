@@ -8,7 +8,7 @@ body {
 }
 
 .inner {
-  max-width:1100px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -17,6 +17,12 @@ nav
 =======================================*/
 header {
   padding: 15px 0;
+  position: fixed;
+  top: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 nav {
@@ -52,6 +58,7 @@ nav {
 キービジュアル
 ========================================*/
 .keyvisual {
+  margin-top: 74px;
   background-image: url(../img/keyvisual/keyvisual.jpg);
   background-repeat: no-repeat;
   width: 100%;
@@ -88,12 +95,12 @@ work
   padding-top: 50px;
 }
 
-.work_box{
+.work_box {
   display: flex;
   justify-content: space-around;
 }
 
-.pc_icon{
+.pc_icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,9 +136,10 @@ work
 /*=======================================
 skills
 ========================================*/
-.skills{
+.skills {
   padding: 50px 0 70px;
 }
+
 .skills h2 {
   margin-bottom: 50px;
   font-size: 40px;
@@ -172,7 +180,7 @@ plan
 }
 
 .plan h2 {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
@@ -253,6 +261,7 @@ SNS
 .sns .icon_box i {
   object-fit: cover;
   color: #8c8c8c;
+  overflow: hidden;
 }
 
 
@@ -269,6 +278,7 @@ SNS
   font-size: 40px;
   overflow: hidden;
   align-items: center;
+  overflow: hidden;
 }
 
 
