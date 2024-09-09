@@ -196,6 +196,14 @@ plan
   width: 100%;
 }
 
+.cell--table thead tr	:first-child{
+  border-left: none;
+}
+
+.cell--table tbody th{
+  border-left: none;
+}
+
 .cell--table th {
   background-color: #6ba7eb;
   font-size: 16px;
@@ -240,13 +248,12 @@ SNS
 .sns {
   width: 100%;
   background-color: #e3f2fd;
-  padding: 0;
+  padding:200px 0;
 }
 
 .sns .icon_box {
   display: flex;
   justify-content: center;
-  padding: 200px 0;
   margin: 0 auto;
 }
 
@@ -259,32 +266,25 @@ SNS
 }
 
 .sns .icon_box li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
   padding: 25px 0;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  text-decoration: none;
 }
 
-
-.sns .icon_box i {
-  object-fit: cover;
-  color: #8c8c8c;
-  overflow: hidden;
-}
-
-.sns .icon_box i:hover {
+.sns .icon_box li a:hover {
   background-color: #fff;
 }
 
-.fa-brands {
-  color: #8c8c8c;
+.sns .icon_box i {
   font-size: 40px;
+  color: #8c8c8c;
   overflow: hidden;
 }
-
-.fa-solid {
-  color: #8c8c8c;
-  font-size: 40px;
-  overflow: hidden;
-}
-
 
 /*=======================================
 footer
