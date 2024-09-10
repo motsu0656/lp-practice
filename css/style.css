@@ -39,6 +39,8 @@ nav {
 .logo {
   width: 60px;
   color: #777;
+  font-size: 40px;
+  vertical-align: middle;
 }
 
 .btn {
@@ -255,14 +257,6 @@ SNS
   display: flex;
   justify-content: center;
   margin: 0 auto;
-}
-
-.sns .icon_box li {
-  margin-left: 200px;
-}
-
-.sns .icon_box li:first-child {
-  margin-left: 0;
 }
 
 .sns .icon_box li a {
