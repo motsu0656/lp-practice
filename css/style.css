@@ -16,6 +16,18 @@ main {
   padding-top: 74px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+@media screen and (max-width:767px){
+  .inner{
+    max-width: 768px;
+  }
+}
+
 /*=======================================
 nav
 =======================================*/
@@ -55,7 +67,11 @@ nav {
   padding: 12px 14px;
 }
 
-
+@media screen and (max-width:1199px){
+  nav{
+    padding:0 50px;
+  }
+}
 
 .btn--1:hover {
   background-color: #333;
@@ -63,12 +79,13 @@ nav {
 }
 
 @media screen and (max-width:767px) {
+
   .btn {
     display: none;
   }
 
   nav{
-    padding: 0 20px;
+    padding: 0 50px;
   }
 
   .drawer_open {
@@ -158,18 +175,20 @@ nav {
   .keyvisual {
     padding: 250px 0;
   }
+
+}
+
+@media screen and (max-width:767px){
+  .keyvisual{
+    padding: 200px 0;
+  }
+
   .keyvisual h1{
     font-size: 40px;
   }
 
   .keyvisual h2{
     font-size: 30px;
-  }
-}
-
-@media screen and (max-width:767px){
-  .keyvisual{
-    padding: 200px 0;
   }
 }
 /*=======================================
@@ -253,6 +272,7 @@ skills
   height: 300px;
   opacity: 0.7;
   transition: opacity 0.7s ease-in-out;
+  display: block;
 }
 
 .skills ul img:hover {
@@ -272,9 +292,8 @@ skills
     gap: 0;
   }
 
-  .skills ul li:nth-child(3) {
+  .skills ul li:nth-child(3n) {
     margin-bottom: 80px;
-    /* skills_3 の下に余白を作る */
   }
 }
 
@@ -298,7 +317,7 @@ plan
   width: 100%;
 }
 
-.cell--table thead tr:first-child {
+.cell--table thead tr th:first-child {
   border-left: none;
 }
 
@@ -343,6 +362,17 @@ plan
   background: #e0efff;
 }
 
+
+@media screen and (max-width:767px){
+  .cell--table th{
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .cell--table td {
+    font-size: 12px;
+  }
+}
 
 /*=======================================
 SNS
