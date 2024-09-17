@@ -151,10 +151,6 @@ nav {
   background-position: center center;
 }
 
-.title {
-  width: 100%;
-}
-
 .keyvisual h1 {
   font-size: 65px;
   font-weight: 700;
@@ -397,15 +393,14 @@ SNS
   justify-content: center;
   align-items: center;
   width: 185px;
-  padding: 25px 0;
+  height: 140px;
+  padding: 0;
   background-color: transparent;
   transition: background-color 0.5s ease;
   text-decoration: none;
 }
 
-.sns .icon_box li a:hover {
-  background-color: #fff;
-}
+
 
 .sns .icon_box i {
   font-size: 40px;
@@ -413,10 +408,15 @@ SNS
   overflow: hidden;
 }
 
+.sns .icon_box i:hover {
+  background-color: #fff;
+}
+
 @media screen and (max-width:767px){
   .sns {
     width: 100%;
     padding: 50px 15px;
+    box-sizing: border-box;
   }
 
   .sns .icon_box{
@@ -427,6 +427,10 @@ SNS
 
   .sns .icon_box i{
     margin: 50px 0;
+  }
+
+  .sns .icon_box li a {
+    width: 100%; /* 幅を100%にしてレスポンシブ対応 */
   }
 }
 /*=======================================
