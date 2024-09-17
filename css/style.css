@@ -295,7 +295,7 @@ skills
     margin-bottom: 80px;
   }
 
-  .skills ul:last-child{
+  .skills ul li:last-child{
     margin-bottom: 0;
   }
 }
