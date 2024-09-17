@@ -22,9 +22,9 @@ html, body {
 
 
 
-@media screen and (max-width:767px){
+@media screen and (max-width:1199px){
   .inner{
-    max-width: 768px;
+    width: 97%;
   }
 }
 
@@ -40,7 +40,6 @@ header {
   right: 0;
   z-index: 100;
   background-color: #fff;
-  opacity: 0.7;
 }
 
 nav {
@@ -295,6 +294,10 @@ skills
   .skills ul li:nth-child(3n) {
     margin-bottom: 80px;
   }
+
+  .skills ul:last-child{
+    margin-bottom: 0;
+  }
 }
 
 /*=======================================
@@ -417,7 +420,9 @@ SNS
   }
 
   .sns .icon_box{
-    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .sns .icon_box i{
