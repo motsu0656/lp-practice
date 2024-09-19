@@ -40,7 +40,6 @@ header {
   right: 0;
   z-index: 100;
   background-color: #fff;
-  opacity: 0.7;
 }
 
 nav {
@@ -150,10 +149,6 @@ nav {
   padding: 400px 0;
   background-size: cover;
   background-position: center center;
-}
-
-.title {
-  width: 100%;
 }
 
 .keyvisual h1 {
@@ -295,6 +290,10 @@ skills
   .skills ul li:nth-child(3n) {
     margin-bottom: 80px;
   }
+
+  .skills ul li:last-child{
+    margin-bottom: 0;
+  }
 }
 
 /*=======================================
@@ -389,19 +388,25 @@ SNS
   margin: 0 auto;
 }
 
+.sns .icon_box li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sns .icon_box li:hover {
+  background-color: #fff;
+}
+
 .sns .icon_box li a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 185px;
-  padding: 25px 0;
+  padding: 0;
   background-color: transparent;
   transition: background-color 0.5s ease;
   text-decoration: none;
-}
-
-.sns .icon_box li a:hover {
-  background-color: #fff;
 }
 
 .sns .icon_box i {
@@ -410,20 +415,34 @@ SNS
   overflow: hidden;
 }
 
-@media screen and (max-width:767px){
+
+
+@media screen and (max-width:767px) {
   .sns {
     width: 100%;
     padding: 50px 15px;
+    box-sizing: border-box;
   }
 
-  .sns .icon_box{
+  .sns .icon_box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .sns .icon_box i{
-    margin: 50px 0;
+  .sns .icon_box li {
+    padding: 50px 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .sns .icon_box i {
+    margin: 0;
+  }
+
+  .sns .icon_box li a {
+    width: 100%;
+    text-align: center;
   }
 }
 /*=======================================
