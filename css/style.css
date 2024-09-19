@@ -388,19 +388,26 @@ SNS
   margin: 0 auto;
 }
 
+.sns .icon_box li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sns .icon_box li:hover {
+  background-color: #fff;
+}
+
 .sns .icon_box li a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 185px;
-  height: 140px;
   padding: 0;
   background-color: transparent;
   transition: background-color 0.5s ease;
   text-decoration: none;
 }
-
-
 
 .sns .icon_box i {
   font-size: 40px;
@@ -408,29 +415,34 @@ SNS
   overflow: hidden;
 }
 
-.sns .icon_box i:hover {
-  background-color: #fff;
-}
 
-@media screen and (max-width:767px){
+
+@media screen and (max-width:767px) {
   .sns {
     width: 100%;
     padding: 50px 15px;
     box-sizing: border-box;
   }
 
-  .sns .icon_box{
+  .sns .icon_box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .sns .icon_box i{
-    margin: 50px 0;
+  .sns .icon_box li {
+    padding: 50px 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .sns .icon_box i {
+    margin: 0;
   }
 
   .sns .icon_box li a {
-    width: 100%; /* 幅を100%にしてレスポンシブ対応 */
+    width: 100%;
+    text-align: center;
   }
 }
 /*=======================================
